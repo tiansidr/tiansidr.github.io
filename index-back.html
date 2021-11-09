@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Space of Tiansi Dong</title>
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="styles/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/slideshow.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+	<div class="nav-container" id="navContainer"></div>
+	<!---script>
+		$("#navContainer").load("include/header.html");
+	</script-->
+
+
+    <nav class="nav">
+      <a href="./">
+        <img class="nav__logo" src="img/ucsd.svg" alt="Uni Bonn">
+      </a>
+      <span class="nav__menu" onClick="expandMenu()">&#9776;</span>
+      <script>
+        function expandMenu() {
+          document.getElementById('navContainer').classList.toggle('expanded');
+        }
+      </script>
+      <div class="nav__separator"></div>
+      <a href="./" class="nav__item">Home</a>
+      <a href="news.html" class="nav__item">News</a>
+      <a href="talks.html" class="nav__item">Talks</a>
+      <a href="research.html" class="nav__item">Research</a>
+      <a href="publications.html" class="nav__item">Publications</a>
+      <!-- sub menu ------------------
+
+              <a href="team.php" class="nav__item">People</a>
+              <div class="nav-sub">
+                  <a href="team.php" class="nav__item">People <small><small><small><small>&#9660</small></small></small></small></a>
+                  <div class="nav-sub__item">
+                      <a href="team.php">Lab members</a>
+                      <a href="gallery.html">Gallery</a>
+                  </div>
+              </div>
+      -------------------------------- -->
+      <!--a href="openings.html" class="nav__item">Openings</a>
+      <a href="intranet.html" class="nav__item">Resources</a>
+      <a href="tour.html" class="nav__item">Lab Tour</a-->
+      <a href="contact.html" class="nav__item">Contact</a>
+    </nav>
+
+    <!-- end of header -->
+    
+    <div class="hero">
+      <div class="slideshow" id="slideshow">
+        <img src="img/bg/rat_subspaces.png" alt="">
+        <img src="img/bg/dagstuhl.png" alt="">
+        <img src="img/bg/rat_subspaces.png" alt="">
+        <img src="img/bg/rat_subspaces.png" alt="">
+      </div>
+      <div class="slideshow__buttons" id="slideshow_buttons">
+      </div>
+      <div class="hero__text">
+        <img src="img/hero-shapes.svg" alt="shapes" class="hero__shapes">
+        <h1 class="hero__title">
+          Virtual Space <br class="text-divider"/>Tiansi Dong
+          <span class="hero__subtitle">geometric | neural | computation </span>
+        </h1>
+      </div>
+    </div>
+    <section class="navigation">
+      <!---h2 class="section__title">Learn More</h2-->
+      <div class="explore-container">
+        <a href="#news" class="explore-item">
+          <img class="explore-item__image" src="img/explore/news.svg" alt="">
+          <span class="explore-item__title">News</span>
+        </a>
+        <a href="#talk" class="explore-item">
+          <img class="explore-item__image" src="img/explore/talks.svg" alt="">
+          <span class="explore-item__title">Talks</span>
+        </a>
+        <a href="#research" class="explore-item">
+          <img class="explore-item__image" src="img/explore/research.svg" alt="">
+          <span class="explore-item__title">Research</span>
+        </a>
+
+        <!---a href="team.php" class="explore-item">
+          <img class="explore-item__image large" src="img/explore/people.svg" alt="">
+          <span class="explore-item__title">Collaborators</span>
+        </a--->
+      </div>
+    </section>
+    <section class="news">
+      <h2 id="news" class="section__title">Recent News</h2>
+      <div class="news-container">
+        <div class="news__item">
+          <div class="news__item__date">September 2021</div>
+          <div class="news__item__title">Dagstuhl Seminar </div>
+          <div class="news__item__description"><a href="" style="color:#409ae3";></a>.</div>
+        </div>
+        <div class="news__item">
+          <div class="news__item__date">May 2021</div>
+          <div class="news__item__title">Paper Published</div>
+          <div class="news__item__description"> <a href="" style="color:#409ae3";></a>.</div>
+        </div>
+      </div>
+      <a href="news.html" class="news__link">See More</a>
+    </section>
+
+
+    <section class="research light">
+      <h2 id="talk" class="section__title">Talks</h2>
+      <div class="research-container">
+        <a href="research.html#photon" class="research-item">
+          <img src="img/research/bio_imaging.png" alt="" class="research-item__image">
+          <span class="research-item__title">AI for Humor</span>
+        </a>
+        <a href="research.html#photon" class="research-item">
+          <img src="img/research/Optical_instrumentation.png" alt="" class="research-item__image">
+          <span class="research-item__title">Symbol Spatialization</span>
+        </a>
+        <a href="research.html#plasmonic" class="research-item">
+          <img src="img/research/PlasmonMetamaterials.png" alt="" class="research-item__image">
+          <span class="research-item__title">Rotating Sphere Model</span>
+        </a>
+        <a href="research.html#PSIM" class="research-item">
+          <img src="img/research/PSIM.jpg" alt="" class="research-item__image">
+          <span class="research-item__title">Explainable AI and Application</span>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="research light">
+      <h2 id="research" class="section__title">Research Areas</h2>
+      <div class="research-container">
+        <a href="research.html#photon" class="research-item">
+          <img src="img/research/bio_imaging.png" alt="" class="research-item__image">
+          <span class="research-item__title">Neural logic Reasoning</span>
+        </a>
+        <a href="research.html#photon" class="research-item">
+          <img src="img/research/Optical_instrumentation.png" alt="" class="research-item__image">
+          <span class="research-item__title">Neural-Symbolic Unification</span>
+        </a>
+        <a href="research.html#plasmonic" class="research-item">
+          <img src="img/research/PlasmonMetamaterials.png" alt="" class="research-item__image">
+          <span class="research-item__title">Computational Humor</span>
+        </a>
+        <a href="research.html#PSIM" class="research-item">
+          <img src="img/research/PSIM.jpg" alt="" class="research-item__image">
+          <span class="research-item__title">Knowledge Graph</span>
+        </a>
+        <a href="research.html#PSIM" class="research-item">
+          <img src="img/research/PSIM.jpg" alt="" class="research-item__image">
+          <span class="research-item__title">Scene, Language, and Space</span>
+        </a>
+        <a href="research.html#PSIM" class="research-item">
+          <img src="img/research/PSIM.jpg" alt="" class="research-item__image">
+          <span class="research-item__title">Qualitative Spatial Reasoning</span>
+        </a>
+      </div>
+    </section>
+
+
+	<section class="social light">
+      <h2 id="news" class="section__title">Social Media</h2>
+      <div class="icon-container">
+        <a href="#"><img src="img/social/twitter.svg" alt=""></a>
+      </div>
+      <!--div class="twitter-feed">
+      <a class="twitter-timeline" data-width="960" data-height="650" data-theme="dark" href="https://twitter.com/">Tweets by jon</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div-->
+    </section>
+
+    <section class="contact" id="footer"> </section>
+    <script>
+		$("#footer").load("include/footer.html");
+	</script>
+  </body>
+  <script>
+    function expandMenu() {
+      document.getElementById('navContainer').classList.toggle('expanded');
+    }
+  </script>
+</html>
