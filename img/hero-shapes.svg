@@ -1,0 +1,25 @@
+<svg width="1110" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_10">
+   <rect id="svg_6" height="25" width="5" y="0" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#999999" fill="#999999"/>
+   <rect id="svg_9" height="5" width="25" y="0" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#999999" fill="#999999"/>
+  </g>
+  <g transform="rotate(90 1097.5,12.500000000000115) " id="svg_13">
+   <rect id="svg_11" height="25" width="5" y="0" x="1085" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#e3bd40" fill="#e3bd40"/>
+   <rect id="svg_12" height="5" width="25" y="0" x="1085" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#e3bd40" fill="#e3bd40"/>
+  </g>
+  <g transform="rotate(180 1097.5,287.5) " id="svg_16">
+   <rect id="svg_14" height="25" width="5" y="275" x="1085" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#999999" fill="#999999"/>
+   <rect id="svg_15" height="5" width="25" y="275" x="1085" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#999999" fill="#999999"/>
+  </g>
+  <g transform="rotate(-90 12.500000000000059,287.50000000000006) " id="svg_19">
+   <rect id="svg_17" height="25" width="5" y="275" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#e3bd40" fill="#e3bd40"/>
+   <rect id="svg_18" height="5" width="25" y="275" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#e3bd40" fill="#e3bd40"/>
+  </g>
+ </g>
+</svg>

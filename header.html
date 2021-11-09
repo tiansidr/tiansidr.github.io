@@ -1,0 +1,31 @@
+	<nav class="nav">
+		<a href="./">
+		  <img class="nav__logo" src="img/ucsd.svg" alt="Uni Bonn">
+		</a>
+		<span class="nav__menu" onClick="expandMenu()">&#9776;</span>
+		<script>
+		    function expandMenu() {
+		      document.getElementById('navContainer').classList.toggle('expanded');
+		    }
+		</script>
+		<div class="nav__separator"></div>
+		<a href="./" class="nav__item">Home</a>
+		<a href="research.html" class="nav__item">Research</a>
+		<a href="publications.html" class="nav__item">Publications</a>
+		<!-- sub menu ------------------
+
+                <a href="team.php" class="nav__item">People</a>
+                <div class="nav-sub">
+                    <a href="team.php" class="nav__item">People <small><small><small><small>&#9660</small></small></small></small></a>
+                    <div class="nav-sub__item">
+                        <a href="team.php">Lab members</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </div>
+        -------------------------------- -->
+		<a href="openings.html" class="nav__item">Openings</a>
+		<a href="intranet.html" class="nav__item">Resources</a>
+		<a href="tour.html" class="nav__item">Lab Tour</a>
+		<a href="news.html" class="nav__item">News</a>
+		<a href="contact.html" class="nav__item">Contact</a>
+	</nav>
