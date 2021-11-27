@@ -15,9 +15,40 @@ div.journal-select {
 </style>
   <body>
 	<div class="nav-container" id="navContainer"></div>
-	<script>
-		$("#navContainer").load("include/header.html");
-	</script>
+
+    <nav class="nav">
+      <a href="./">
+        <img class="nav__logo" src="img/ucsd.svg" alt="Uni Bonn">
+      </a>
+      <span class="nav__menu" onClick="expandMenu()">&#9776;</span>
+      <script>
+        function expandMenu() {
+          document.getElementById('navContainer').classList.toggle('expanded');
+        }
+      </script>
+      <div class="nav__separator"></div>
+      <a href="./" class="nav__item">Home</a>
+      <a href="news.html" class="nav__item">News</a>
+      <a href="teach.html" class="nav__item">Lectures</a>
+      <a href="talks.html" class="nav__item">Talks</a>
+      <a href="research.html" class="nav__item">Research</a>
+      <a href="publications.html" class="nav__item">Publications</a>
+      <!-- sub menu ------------------
+
+              <a href="team.php" class="nav__item">People</a>
+              <div class="nav-sub">
+                  <a href="team.php" class="nav__item">People <small><small><small><small>&#9660</small></small></small></small></a>
+                  <div class="nav-sub__item">
+                      <a href="team.php">Lab members</a>
+                      <a href="gallery.html">Gallery</a>
+                  </div>
+              </div>
+      -------------------------------- -->
+      <!--a href="openings.html" class="nav__item">Openings</a>
+      <a href="intranet.html" class="nav__item">Resources</a>
+      <a href="tour.html" class="nav__item">Lab Tour</a-->
+      <a href="contact.html" class="nav__item">Contact</a>
+    </nav>
    
 
     <section>
@@ -37,11 +68,13 @@ div.journal-select {
         <div class="publications-section-container">
           <div class="publication-item">
             <span class="publication-item__title normal">A Geometric Approach to the Unification of Symbolic Structures and Neural Networks<a href="https://link.springer.com/book/10.1007/978-3-030-56275-5">(link)</a></span>
-            <span class="publication-item__authors">Tiansi Dong (2021)</span>
+            <span class="publication-item__subtitle"><b class="publication-item__journal">Springer monograph</b> 2021</span>
+            <span class="publication-item__authors"><b>Tiansi Dong</b></span>
           </div>
           <div class="publication-item">
             <span class="publication-item__title normal">Recognizing Variable Environment -- The Theory of Cognitive Prism<a href="https://link.springer.com/book/10.1007/978-3-642-24058-4">(link)</a></span>
-            <span class="publication-item__authors">Tiansi Dong (2012)</span>
+            <span class="publication-item__subtitle"><b class="publication-item__journal">Springer monograph</b> 2021</span>
+            <span class="publication-item__authors"><b>Tiansi Dong</b></span>
           </div>
           <div class="publication-item"> <!--124-->
             <span class="publication-item__title normal">Triple Classification Using Regions and Fine-Grained Entity Typing.</span>
@@ -65,7 +98,7 @@ div.journal-select {
           </div>
           <div class="publication-item"> <!--123-->
             <span class="publication-item__title normal">Imposing Category Trees Onto Word-Embeddings Using A Geometric Construction</span>
-            <span class="publication-item__subtitle"><b class="publication-item__journal">ICLR</b>019<a href="https://www.researchgate.net/publication/331319652_Imposing_Category_Trees_Onto_Word-Embeddings_Using_A_Geometric_Construction" target="_blank">(link)</a>
+            <span class="publication-item__subtitle"><b class="publication-item__journal">ICLR</b> 2019<a href="https://www.researchgate.net/publication/331319652_Imposing_Category_Trees_Onto_Word-Embeddings_Using_A_Geometric_Construction" target="_blank">(link)</a>
               </span>
             <span class="publication-item__authors"><b>Tiansi Dong</b>, Christian Bauckhage, Hailong Jin, Juanzi Li, Olaf Cremers, Daniel Speicher, Armin B. Cremers, Joerg Zimmermann</span>
             <details>
@@ -161,7 +194,7 @@ div.journal-select {
             </div>
         	 <div class="publication-item"> <!--123-->
               <span class="publication-item__title normal">Imposing Category Trees Onto Word-Embeddings Using A Geometric Construction</span>
-              <span class="publication-item__subtitle"><b class="publication-item__journal">ICLR</b>019<a href="https://www.researchgate.net/publication/331319652_Imposing_Category_Trees_Onto_Word-Embeddings_Using_A_Geometric_Construction" target="_blank">(link)</a>
+              <span class="publication-item__subtitle"><b class="publication-item__journal">ICLR</b> 2019<a href="https://www.researchgate.net/publication/331319652_Imposing_Category_Trees_Onto_Word-Embeddings_Using_A_Geometric_Construction" target="_blank">(link)</a>
               </span>
               <span class="publication-item__authors"><b>Tiansi Dong</b>, Christian Bauckhage, Hailong Jin, Juanzi Li, Olaf Cremers, Daniel Speicher, Armin B. Cremers, Joerg Zimmermann</span>
               <details>
@@ -250,26 +283,6 @@ div.journal-select {
                 <!--img class="publication-item__image" src="img/publications/journals/114.png" alt="google_scholar" /-->
               </details>
             </div>
-            <div class="publication-item"> <!--113-->
-              <span class="publication-item__title normal">Experimental Demonstration of Hyperbolic Metamaterial Assisted Illumination Nanoscopy</span>
-              <span class="publication-item__subtitle"><b class="publication-item__journal">ACS Nano</b> 12(11), 11316-11322 (2018) <a href="data/Journals/ACSNano_Qian_2018.pdf" target="_blank">pdf</a>
-              </span>
-              <span class="publication-item__authors">Ma, Q., Qian, H., Montoya, S., Bao, W., Ferrari, L., Hu, H., Khan, E., Wang, Y., Fullerton, E.E., Narimanov, E.E., Zhang, X. and Liu, Z.</span>
-              <details>
-                <summary class="publication-item__abstract"><b>Abstract</b> (click)</summary>
-                <p class="publication-item__text">An optical metamaterial is capable of manipulating light in nanometer scale that goes
-                    beyond what is possible with conventional materials. Taking advantage of this special property, metamaterial-assisted 
-                    illumination nanoscopy (MAIN) possesses tremendous potential to extend the resolution far beyond
-                    conventional structured illumination microscopy. Among the available MAIN designs, hyperstructured
-                    illumination that utilizes strong dispersion of a hyperbolic metamaterial (HMM) is one of the most promising
-                    and practical approaches, but it is only theoretically studied. In this paper, we experimentally demonstrate
-                    the concept of hyperstructured illumination. A ~80 nm resolution has been achieved in a well-known Ag/SiO<sub>2</sub>
-                    multilayer HMM system by using a low numerical aperture objective (NA = 0.5), representing a 6-fold
-                    resolution enhancement of the diffraction limit. The resolution can be significantly improved by further
-                    material optimization.</p>
-                <img class="publication-item__image" src="img/publications/journals/113.png" alt="google_scholar" />
-              </details>
-            </div>
             <div class="publication-item"> <!--112-->
               <span class="publication-item__title normal">An Assertion Framework for Mobile Robotic Programming with Spatial Reasoning</span>
               <span class="publication-item__subtitle"><b class="publication-item__journal">COMPSAC</b> 2018<a href="https://ieeexplore.ieee.org/document/8377643" target="_blank">(link)</a>
@@ -290,7 +303,7 @@ div.journal-select {
                   demonstrate the effectiveness.</p>
                 <!--img class="publication-item__image" src="img/publications/journals/112.png" alt="google_scholar" /-->
               </details>
-            </div> 
+            </div>
 
           </div>
         </ol>
