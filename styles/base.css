@@ -619,6 +619,9 @@ section {
   font-style: italic;
   color: white; }
 
+.teaching-item {
+  color: #e2ba34; }
+
 .publication-item__journal {
   color: #e3bd40; }
 
