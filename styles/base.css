@@ -808,12 +808,12 @@ section {
   text-align: left; 
   margin: 1rem}
   .opening__item__description li {
-    margin-left: 1rem;
+    margin-left: 6rem;
 
     }
 
 .customIndent {
-  padding-left: 15em;
+  padding-left: 1em;
 }
 
 div.a {
