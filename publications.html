@@ -57,6 +57,7 @@ div.journal-select {
     <section>
       <div class="journal-select">
         <span class="journal-select__text">Select:</span></br>
+        <a href="#2023"><span data-block-id="2023" class="journal-select__item">2023</span></a>
         <a href="#2022"><span data-block-id="2022" class="journal-select__item">2022</span></a>
         <a href="#2021"><span data-block-id="2021" class="journal-select__item">2021</span></a>
         <a href="#2020"><span data-block-id="2020" class="journal-select__item">2020</span></a>
@@ -70,6 +71,16 @@ div.journal-select {
       <ul id="selected" class="publications-container">
         <h2 class="section__title">Selected Publications</h2>
         <div class="publications-section-container">
+          <div class="publication-item">
+            <span class="publication-item__title normal">Editorial: Multimodal communication and multimodal computing<a href="https://www.frontiersin.org/articles/10.3389/frai.2023.1234920/full">(link )</a></span>
+            <span class="publication-item__subtitle"><b class="publication-item__journal">Frontiers in Artificial Intelligence </b> June 2023</span>
+            <span class="publication-item__authors">Alexander Mehler, Andy Lücking <b>Tiansi Dong</b> </span>
+            <details>
+            <summary class="publication-item__abstract"><b>Abstract</b> (click)</summary>
+            <p class="publication-item__text">.</p>
+            <!--img class="publication-item__image" src="img/publications/journals/141.png" alt="Figure" /-->
+            </details>
+          </div>
           <div class="publication-item">
             <span class="publication-item__title normal">How Can Cross-lingual Knowledge Contribute Better to Fine-Grained Entity Typing?<a href="">(link)</a></span>
             <span class="publication-item__subtitle"><b class="publication-item__journal">Findings in ACL</b> 2022</span>
@@ -187,13 +198,40 @@ div.journal-select {
           </div>
         </div>
       </ul>
+      <ol reversed start="37" id="2023" class="publications-container">
+        <h2 class="section__title">2023</h2>
+        <div class="publications-section-container">
+          <div class="publication-item">
+            <span class="publication-item__title normal">Word Sense Disambiguation as a Game of Neurosymbolic Darts<a href="https://arxiv.org/abs/2307.16663">(link)</a></span>
+            <span class="publication-item__subtitle"><b class="publication-item__journal">arXiv</b> 2023</span>
+            <span class="publication-item__authors"><b>Tiansi Dong</b>, Rafet Sifa</span>
+             <details>
+              <summary class="publication-item__abstract"><b>Abstract</b> (click)</summary>
+              <p class="publication-item__text">Word Sense Disambiguation (WSD) is one of the hardest tasks in natural language understanding and knowledge engineering. The glass ceiling of 80% F1 score is recently achieved through supervised deep-learning, enriched by a variety of knowledge graphs. Here, we propose a novel neurosymbolic methodology that is able to push the F1 score above 90%. The core of our methodology is a neurosymbolic sense embedding, in terms of a configuration of nested balls in n-dimensional space. The centre point of a ball well-preserves word embedding, which partially fix the locations of balls. Inclusion relations among balls precisely encode symbolic hypernym relations among senses, and enable simple logic deduction among sense embeddings, which cannot be realised before. We trained a Transformer to learn the mapping from a contextualized word embedding to its sense ball embedding, just like playing the game of darts (a game of shooting darts into a dartboard). A series of experiments are conducted by utilizing pre-training n-ball embeddings, which have the coverage of around 70% training data and 75% testing data in the benchmark WSD corpus. The F1 scores in experiments range from 90.1% to 100.0% in all six groups of test data-sets (each group has 4 testing data with different sizes of n-ball embeddings). Our novel neurosymbolic methodology has the potential to break the ceiling of deep-learning approaches for WSD. 
+                Limitations and extensions of our current works are listed.</p>
+              <!--img class="publication-item__image" src="img/publications/journals/141.png" alt="Figure" /-->
+            </details>
+          </div> 
+          <div class="publication-item">
+            <span class="publication-item__title normal">Editorial: Multimodal communication and multimodal computing<a href="https://www.frontiersin.org/articles/10.3389/frai.2023.1234920/full">(link )</a></span>
+            <span class="publication-item__subtitle"><b class="publication-item__journal">Frontiers in Artificial Intelligence </b> June 2023</span>
+            <span class="publication-item__authors">Alexander Mehler, Andy Lücking <b>Tiansi Dong</b> </span>
+            <details>
+            <summary class="publication-item__abstract"><b>Abstract</b> (click)</summary>
+            <p class="publication-item__text">.</p>
+            <!--img class="publication-item__image" src="img/publications/journals/141.png" alt="Figure" /-->
+            </details>
+          </div>
+            
+        </div>
+      </ol>
       <ol reversed start="36" id="2022" class="publications-container">
         <h2 class="section__title">2022</h2>
         <div class="publications-section-container">
           <div class="publication-item">
-            <span class="publication-item__title normal">How Can Cross-lingual Knowledge Contribute Better to Fine-Grained Entity Typing?<a href="">(link)</a></span>
-            <span class="publication-item__subtitle"><b class="publication-item__journal">Findings in ACL</b> 2022</span>
-            <span class="publication-item__authors">Hailong Jin, <b>Tiansi Dong</b>, Lei Hou, Juanzi Li, Hui Chen, Zelin Dai, Qu Yincen</span>
+            <span class="publication-item__title normal">How Can Cross-lingual Knowledge Contribute Better to Fine-Grained Entity Typing?<a href="https://aclanthology.org/2022.findings-acl.243.pdf">(link)</a></span>
+            <span class="publication-item__subtitle"><b class="publication-item__journal">arXiv</b> 2023</span>
+            <span class="publication-item__authors"><b>Tiansi Dong</b>, Rafet Sifa</span>
              <details>
               <summary class="publication-item__abstract"><b>Abstract</b> (click)</summary>
               <p class="publication-item__text">Cross-lingual Entity Typing (CLET) aims at improving the quality of entity type prediction by transferring semantic knowledge learned from rich-resourced languages to low-resourced languages. In this paper, by utilizing multilingual transfer learning via the mixture-of-experts approach, our model dynamically capture the relationship between target language and each source language, and effectively generalize to predict types of unseen entities in new languages. Extensive experiments on multi-lingual datasets show that our method significantly outperforms multiple baselines and can robustly handle negative transfer. We questioned the relationship between language similarity and the performance of CLET. With a series of experiments, we refute the commonsense that the more source the better, and propose the
