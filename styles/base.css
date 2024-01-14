@@ -385,7 +385,7 @@ section {
   margin: 4rem auto 0 auto;
   grid-row-gap: 2rem;
   grid-column-gap: 5rem;
-  align-items: center; }
+  align-items: flex-start; }
   @media (max-width: 56.25em) {
     .news-container {
       grid-template-columns: 1fr; } }
